@@ -315,7 +315,7 @@
 		"type_name": "dweet_io",
 		"display_name": "Dweet.io",
 		"external_scripts": [
-			((window.location.protocol !== 'https:')?"http":"https")+"://dweet.io/client/dweet.io.min.js"
+			(location.protocol == "https:" ? "https:" : "http:") + "//dweet.io/client/dweet.io.min.js"
 		],
 		"settings": [
 			{
