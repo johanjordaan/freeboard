@@ -311,6 +311,7 @@
 		self.onSettingsChanged(settings);
 	};
 
+	alert((location.protocol == "https:" ? "https:" : "http:") + "//dweet.io/client/dweet.io.min.js");
 	freeboard.loadDatasourcePlugin({
 		"type_name": "dweet_io",
 		"display_name": "Dweet.io",
